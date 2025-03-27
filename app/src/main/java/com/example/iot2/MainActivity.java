@@ -144,8 +144,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Método para fazer login do usuário
     private void loginUsuario() {
-        String email = "querosermelhor789@gmail.com";
-        String senha = "vaifuncionar489";
+        String email = "email";
+        String senha = "senha";
 
         auth.signInWithEmailAndPassword(email, senha)
                 .addOnCompleteListener(task -> {
