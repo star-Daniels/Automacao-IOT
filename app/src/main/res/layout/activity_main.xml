@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/grad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <View
+        android:id="@+id/cir"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/circ"
+
+        />
+    <View
+        android:id="@+id/vw"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/conteiner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cir"
+
+        />
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMPERATURA"
+        android:fontFamily="@font/lato"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="9dp"
+
+
+        android:layout_marginBottom="45dp"
+
+        app:layout_constraintTop_toBottomOf="@id/tempc"
+        app:layout_constraintStart_toStartOf="@id/cir"
+        app:layout_constraintEnd_toEndOf="@id/cir"
+        app:layout_constraintBottom_toBottomOf="@id/cir"/>
+
+    <TextView
+        android:id="@+id/tempc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="39°"
+        android:fontFamily="@font/chau_philomene_one"
+        android:textSize="70sp"
+        android:textColor="#11002e"
+
+        android:layout_marginBottom="30dp"
+
+        app:layout_constraintTop_toTopOf="@+id/cir"
+        app:layout_constraintStart_toStartOf="@id/cir"
+        app:layout_constraintEnd_toEndOf="@id/cir"
+        app:layout_constraintBottom_toBottomOf="@id/cir"
+        />
+
+    <TextView
+        android:id="@+id/Text3"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="UMIDADE"
+        android:textAlignment="center"
+        android:fontFamily="@font/lato"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="13dp"
+        android:background="@drawable/cont"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="45dp"
+
+        app:layout_constraintTop_toBottomOf="@id/cir"
+        app:layout_constraintStart_toStartOf="@id/dado" />
+
+    <View
+        android:id="@+id/cir2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+
+        app:layout_constraintStart_toEndOf="@id/Text3"
+        app:layout_constraintTop_toTopOf="@id/Text3"
+        app:layout_constraintBottom_toBottomOf="@id/Text3"
+        app:layout_constraintEnd_toEndOf="@id/dado"
+        android:background="@drawable/circ"
+
+        />
+
+    <TextView
+        android:id="@+id/umidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:fontFamily="@font/chau_philomene_one"
+        android:textSize="40sp"
+        android:textColor="#11002e"
+        app:layout_constraintTop_toTopOf="@id/cir2"
+        app:layout_constraintBottom_toBottomOf="@id/cir2"
+        app:layout_constraintStart_toStartOf="@id/cir2"
+        app:layout_constraintEnd_toEndOf="@id/cir2"
+
+        />
+
+    <View
+        android:id="@+id/dado"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/cont"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cir2"
+        />
+
+    <TextView
+        android:id="@+id/Text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HCI"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:padding="9dp"
+        android:background="@drawable/cont"
+
+        android:layout_marginStart="7dp"
+        app:layout_constraintTop_toTopOf="@id/dado"
+        app:layout_constraintBottom_toBottomOf="@id/dado"
+        app:layout_constraintStart_toStartOf="@id/dado"
+        app:layout_constraintEnd_toStartOf="@id/hci"/>
+
+    <TextView
+        android:id="@+id/hci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sem dados"
+        android:fontFamily="@font/lato"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintTop_toTopOf="@id/dado"
+        app:layout_constraintBottom_toBottomOf="@id/dado"
+        app:layout_constraintStart_toEndOf="@id/Text4"
+        app:layout_constraintEnd_toEndOf="@id/dado"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:backgroundTint="@color/ld"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:text="AGUARDE"
+        android:textAllCaps="true"
+        app:layout_constraintCircleRadius="2dp"
+        app:layout_constraintTop_toTopOf="@id/vw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

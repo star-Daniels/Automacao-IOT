@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "72736281745",
+    "firebase_url": "https://granjastar-dc53a-default-rtdb.firebaseio.com",
+    "project_id": "granjastar-dc53a",
+    "storage_bucket": "granjastar-dc53a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72736281745:android:4738d69f1946f483029b30",
+        "android_client_info": {
+          "package_name": "com.example.iot2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgZjrOmLg1tTmiXW84w7sgCMi1XHF9-f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
